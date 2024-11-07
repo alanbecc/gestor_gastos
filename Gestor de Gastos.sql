@@ -90,3 +90,10 @@ WHERE gastos.fecha BETWEEN '2024-01-01' AND '2024-12-31'
 GROUP BY usuario.nombre;
 
 select top 5 * from categorias;
+
+insert into gastos (id_gasto,id_usuario,id_categoria,fecha,monto,descripcion) values
+(16,101,40,'2024-06-06',100000,'lapiz para table '),
+(17,102,50,'2024-04-11',1550000,'celular '),
+(18,103,60,'2024-09-21',450000,'table')
+
+select top 5 * from gastos;
